@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.sass';
 import { Navigation } from './components/navigation/navigation';
+import { User } from './components/user/user';
 
 export const Header = () => {
   return (
@@ -22,10 +23,9 @@ export const Header = () => {
           </div>
         </div>
       </div>
-      <div className="header__nav">
-        <div className="container">
-          <Navigation />
-        </div>
+      <div className="header__bottom container">
+        <Navigation />
+        <User />
       </div>
     </div>
   )
