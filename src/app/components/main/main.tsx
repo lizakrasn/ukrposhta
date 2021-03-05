@@ -8,7 +8,7 @@ export const Main = () => {
   return (
     <div className="main">
       <Slider />
-      <Trecking />
+      {/* <Trecking /> */}
       <Services />
     </div>
   )

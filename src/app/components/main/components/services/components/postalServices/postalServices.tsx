@@ -1,5 +1,6 @@
 import './postalServices.sass'
 import { Service } from './service/service'
+import {postalService} from '../../../../../../../data/data'
 
 export const PostalServices = () => {
   return (
@@ -12,13 +13,19 @@ export const PostalServices = () => {
         </div>
         <div className="postal__right-column">
           <div className="postal__services">
-            <div className="postal__service-wrapper">
-              <Service
-                title="Доставка з інтернет-магазинів"
-                modifire=""
-                imgURL="./images/postal-service-1.svg"
-              />
-            </div>
+            {postalService.map(item => {
+              return (
+                <div className="postal__service-wrapper">
+                  <Service
+                    title = {item.title}
+                    imgURL = {item.imgURL}
+                    modifire = {item.modifire}
+                  />
+                </div>
+              )
+            })
+
+            }
           </div>
         </div>
       </div>

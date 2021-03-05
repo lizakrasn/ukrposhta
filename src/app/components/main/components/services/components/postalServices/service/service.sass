@@ -7,6 +7,7 @@
   height: 180px
   width: 100%
   max-width: 370px
+  cursor: pointer
 
   &__img
     width: 100%
@@ -21,9 +22,36 @@
     color: $main-color
     font-family: $bold-font
     font-size: 14px
+    transition: color 500ms
 
   &__title
     padding-bottom: 10px
     font-size: 24px
     line-height: 32px
+    max-width: 200px
+
+  &-green
+    &:hover
+      .service__link
+        color: #A6D5D5
+
+  &-yellow
+    &:hover
+      .service__link
+        color: #FFD50A
+
+  &-blue
+    &:hover
+      .service__link
+        color: #4A90E2
+
+  &-red
+    &:hover
+      .service__link
+        color: #F95050
+  
+  &-purple
+    &:hover
+      .service__link
+        color: #9E50E3
 
