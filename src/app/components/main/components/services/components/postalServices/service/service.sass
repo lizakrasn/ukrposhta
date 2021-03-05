@@ -8,6 +8,9 @@
   width: 100%
   max-width: 370px
   cursor: pointer
+  border-radius: 10px
+  background-color: $white
+  transition: background-color 500ms
 
   &__img
     width: 100%
@@ -22,7 +25,6 @@
     color: $main-color
     font-family: $bold-font
     font-size: 14px
-    transition: color 500ms
 
   &__title
     padding-bottom: 10px
@@ -32,26 +34,21 @@
 
   &-green
     &:hover
-      .service__link
-        color: #A6D5D5
+      background-color: $green
 
   &-yellow
     &:hover
-      .service__link
-        color: #FFD50A
+      background-color: $yellow
 
   &-blue
     &:hover
-      .service__link
-        color: #4A90E2
+      background-color: $blue
 
   &-red
     &:hover
-      .service__link
-        color: #F95050
+      background-color: $red
   
   &-purple
     &:hover
-      .service__link
-        color: #9E50E3
+      background-color: $purple
 
