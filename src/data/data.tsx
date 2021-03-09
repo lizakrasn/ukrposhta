@@ -30,3 +30,30 @@ export const postalService = [
     modifire: "yellow"
   }
 ]
+
+export const financialService = [
+  {
+    title: "Грошові перекази",
+    imgURL: "./images/financial-service-1.svg",
+    modifire: "green",
+    type: "square"
+  },
+  {
+    title: "Оплата онлайн",
+    imgURL: "./images/financial-service-2.svg",
+    modifire: "yellow",
+    type: "square"
+  },
+  {
+    title: "Міжнародні перекази",
+    imgURL: "./images/financial-service-3.svg",
+    modifire: "blue",
+    type: "square"
+  },
+  {
+    title: "Страхування",
+    imgURL: "./images/financial-service-4.svg",
+    modifire: "red",
+    type: "square"
+  }
+]
