@@ -2,6 +2,7 @@ import React from 'react';
 import { Services } from './components/services/services';
 import { Slider } from './components/slider/slider';
 import { Trecking } from './components/trecking/trecking';
+import { Zipcode } from './components/zipcode/zipcode';
 import './main.sass'
 
 export const Main = () => {
@@ -10,6 +11,7 @@ export const Main = () => {
       <Slider />
       <Trecking />
       <Services />
+      <Zipcode />
     </div>
   )
 }
