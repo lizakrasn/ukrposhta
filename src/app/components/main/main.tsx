@@ -1,4 +1,5 @@
 import React from 'react';
+import { MiddleBlock } from './components/middle-block/middleBlock';
 import { Services } from './components/services/services';
 import { Slider } from './components/slider/slider';
 import { Trecking } from './components/trecking/trecking';
@@ -12,6 +13,7 @@ export const Main = () => {
       <Trecking />
       <Services />
       <Zipcode />
+      <MiddleBlock />
     </div>
   )
 }
