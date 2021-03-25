@@ -15,6 +15,7 @@ export const News = () => {
               text={item.text}
               imgUrl={item.imgUrl}
               id={item.id}
+              additionalClass = "news__item"
             />
           )
         })}

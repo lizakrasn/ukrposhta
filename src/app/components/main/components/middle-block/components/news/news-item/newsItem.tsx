@@ -5,12 +5,13 @@ interface NewsItemProps {
   date: string
   text : string
   imgUrl: string
+  additionalClass?: string
   id: number
 }
 
-export const NewsItem = ({title, date, text, imgUrl}: NewsItemProps) => {
+export const NewsItem = ({title, date, text, imgUrl, additionalClass}: NewsItemProps) => {
   return (
-    <a className="news-item" href="#">
+    <a className={`news-item ${additionalClass}`} href="#">
       <div className="news-item__info">
         <img className="news-item__img" src={imgUrl} alt=""/>
         <div className="news-item__title-block">
